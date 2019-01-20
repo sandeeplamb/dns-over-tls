@@ -157,6 +157,26 @@ Sun, 20 Jan 2019 18:31:13 INFO Running command dig @localhost google.com
 
 **1. What are the security concerns for this kind of service?**
 
-**2. In a microservice arch; how would you see this the dns to dns-over-tls proxy used?**
+DNSSEC enables authentication of the messages, the DNS requests and answers are still sent in the clear. So this is last nail in the coffin, to encrypt the last portion of internet traffic that has historically been cleartext.
+
+This encrypts everything from the end-user device to their resolver.
+
+There might be some latency issues because of heavier packets. But for those who take security sincerely, this is trivial.
+
+**2. In microservices world; how would you see this the dns to dns-over-tls proxy used?**
+
+I thing there is no problem with micro-services here. There is always a service discovery which happens a step before hitting the micro-services endpoints.
+
+So the DNS resolution thing happens over the service-discovery layer and micro-service need not to be aware of.
+
+To run micro-services inside the network of company or dedicated VPC, its better not to make a payload heavier. Security comes at a cost. But latency issues, might affect the business as well.
+
+So we need to balance out, what we want.
+
+I am not saying that this is not possible. Technically, possible yes.
 
 **3. What other improvements would be interesting to add to the project?**
+
+Except Exception Handling, Edge cases, Logging & Purging (housekeeping), a good improvment will be to give time period of normal dig'ing and TLS dig'ing for a domain lookup.
+
+Also to notify users that they are encrypted end to end and privacy has been maintained to lookup for your searches.
