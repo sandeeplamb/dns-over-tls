@@ -138,3 +138,19 @@ duckduckgo.org.		60	IN	A	23.21.193.169
   <img src="https://asciinema.org/a/o3l2QUySnxR3C2AvmTJKVM8x1.png" width="885"></image>
   </a>
 </p>
+
+## Bonus-From-Star-Lord
+
+There is a log file inside the container which records all the requests sent from client.
+
+You can see the logs like
+
+```
+[slamba ◯  Star-Lord ] ☘ docker exec dotls cat /server_dns.py-history.log
+Sun, 20 Jan 2019 17:52:01 INFO Checking domain duckduckgo.org
+Sun, 20 Jan 2019 17:52:01 INFO Running command dig @localhost duckduckgo.org
+Sun, 20 Jan 2019 17:56:29 INFO Checking domain duckduckgo.org
+Sun, 20 Jan 2019 17:56:29 INFO Running command dig @localhost duckduckgo.org
+Sun, 20 Jan 2019 18:31:13 INFO Checking domain google.com
+Sun, 20 Jan 2019 18:31:13 INFO Running command dig @localhost google.com
+```
