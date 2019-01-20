@@ -155,8 +155,8 @@ Sun, 20 Jan 2019 18:31:13 INFO Checking domain google.com
 Sun, 20 Jan 2019 18:31:13 INFO Running command dig @localhost google.com
 ```
 
-*What are the security concerns for this kind of service?*
+**1. What are the security concerns for this kind of service?**
 
-*In a microservice arch; how would you see this the dns to dns-over-tls proxy used?*
+**2. In a microservice arch; how would you see this the dns to dns-over-tls proxy used?**
 
-*What other improvements would be interesting to add to the project?*
+**3. What other improvements would be interesting to add to the project?**
