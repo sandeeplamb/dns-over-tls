@@ -179,4 +179,4 @@ I am not saying that this is not possible. Technically, possible yes.
 
 Except Exception Handling, Edge cases, Logging & Purging (housekeeping), a good improvment will be to give time period of normal dig'ing and TLS dig'ing for a domain lookup.
 
-Also to notify users that they are encrypted end to end and privacy has been maintained to lookup for your searches.
+Also to dig domain based on geo-location to decrease latency.
